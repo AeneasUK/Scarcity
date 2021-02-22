@@ -154,7 +154,7 @@ namespace ScarcityAlpha
             recipe.ResultCounts = new int[] { 3, 1 };
             //Red Jello
             recipe = LDB.recipes.Select(18);
-            recipe.Items = new int[] { 1113, 1123 };
+            recipe.Items = new int[] { 1303, 1123 };
             recipe.ItemCounts = new int[] { 1, 1 };
             //Silicon Ore Recipe
             recipe = LDB.recipes.Select(34);
@@ -164,6 +164,9 @@ namespace ScarcityAlpha
             recipe.Items = new int[] { 1115 };
             recipe.ItemCounts = new int[] { 1 };
             recipe.ResultCounts = new int[] { 3 };
+            //Microcrystalline Component
+            recipe = LDB.recipes.Select(53);
+            recipe.ItemCounts = new int[] { 1, 1 };
 
         }
        
