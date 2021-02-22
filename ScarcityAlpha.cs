@@ -42,7 +42,7 @@ namespace ScarcityAlpha
             ItemProto wire = Registry.registerItem(10001, "copperWireName", "copperWireDesc", "assets/copper_wire", 1711);
 
             Registry.registerRecipe(10001, ERecipeType.Assemble, 60, new[] { 1104 }, new[] { 2 }, new[] { wire.ID }, new[] { 1 }, "copperWireDesc", 1);
-            Registry.registerRecipe(10002, ERecipeType.Chemical, 120, new[] { 1000 }, new[] { 2 }, new[] { oxygen.ID, 1120 }, new[] { 1, 2 }, "oxygenDesc", 1102);
+            Registry.registerRecipe(10002, ERecipeType.Refine, 120, new[] { 1000 }, new[] { 2 }, new[] { oxygen.ID, 1120 }, new[] { 1, 2 }, "oxygenDesc", 1102);
 
 
 
@@ -109,7 +109,7 @@ namespace ScarcityAlpha
             //Steel
             recipe = LDB.recipes.Select(63);
             recipe.Items = new int[] { 1101, 10002 };
-            recipe.Type = ERecipeType.Refine;
+            recipe.Type = ERecipeType.Smelt;
             recipe.ItemCounts = new int[] { 3, 1 };
             recipe.ResultCounts = new int[] { 1 };
             //Refinery Building
