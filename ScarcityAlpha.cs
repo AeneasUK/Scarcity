@@ -104,8 +104,10 @@ namespace ScarcityAlpha
             recipe.ItemCounts = new int[] { 3 };
             //Refined Oil
             recipe = LDB.recipes.Select(16);
+            recipe.ItemCounts = new int[] { 1 };
             recipe.Results = new int[] { 1114 };
             recipe.ResultCounts = new int[] { 1 };
+            recipe.TimeSpend = 180;
             //Steel
             recipe = LDB.recipes.Select(63);
             recipe.Items = new int[] { 1101, 10002 };
@@ -149,7 +151,7 @@ namespace ScarcityAlpha
             //X-Ray Cracking
             recipe = LDB.recipes.Select(58);
             recipe.Items = new int[] { 1114, 1120 };
-            recipe.ItemCounts = new int []{ 1, 1};
+            recipe.ItemCounts = new int[] { 1, 1 };
             recipe.Results = new int[] { 1120, 1109 };
             recipe.ResultCounts = new int[] { 3, 1 };
             //Red Jello
@@ -167,9 +169,25 @@ namespace ScarcityAlpha
             //Microcrystalline Component
             recipe = LDB.recipes.Select(53);
             recipe.ItemCounts = new int[] { 1, 1 };
+            
+            //Tier Three
+
+            //Yellow Jello
+            recipe = LDB.recipes.Select(27);
+            recipe.Items = new int[] { 1113, 1118 };
+            recipe.ItemCounts = new int[] { 1, 1 };
+            //Titanium Crystals
+            recipe = LDB.recipes.Select(26);
+            item = LDB.items.Select(1118);
+            item.Name = "High Strength Crystals";
+            recipe.Name = "High Strength Crystals";
+            recipe.Items = new int[] { 1117, 1103 };
+            recipe.ItemCounts = new int[] { 1, 1 };
+
+
 
         }
-       
+
     }
 
 }
