@@ -182,7 +182,7 @@ namespace ScarcityAlpha
             item.Name = "High Strength Crystals";
             recipe.Name = "High Strength Crystals";
             recipe.Items = new int[] { 1117, 1103 };
-            recipe.ItemCounts = new int[] { 1, 1 };
+            recipe.ItemCounts = new int[] { 1, 2 };
 
 
 
